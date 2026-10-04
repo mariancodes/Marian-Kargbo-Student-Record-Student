@@ -13,13 +13,22 @@ class Student:
         print("Age", self.age)
         print("Grade", self.grade)
 
+    def update_record(self, new_grade):
+        self.grade = new_grade
+        print(self.name, "grade updated to", self.grade)
 
     def enroll_course(self, course):
         print(self.name, "is enrolled in", course.course_name)  
 
     @classmethod
     def school_name(cls):    
-     print("Limkokwing University")        
+        print("Limkokwing University")        
+
+
+    @staticmethod
+    def school_message():
+        print("Student Record System")
+
 
 class Course:
     def __init__(self, course_name, course_id):
@@ -36,6 +45,9 @@ class Course:
 student1 = Student("Marian", 5052, 19, "A")    
 student1.display_info()    
 
+student1.update_record("A+")
+student1.display_info()
+
 student2 = Student("Isha", 2025, 17, "B")
 student2.display_info()
 
@@ -48,11 +60,16 @@ students = [student1, student2]
 def add_student(student):
     students.append(student)
 
+def display_students():
+    for student in students:
+        student.display_info()
+
+
 student3 = Student("James", 4245, 13, "C")
 add_student(student3)
 
-for student in students:
-    student.display_info()
-    
+display_students()
+
 Student.school_name()
+Student.school_message()
 
