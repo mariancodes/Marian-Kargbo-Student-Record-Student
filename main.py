@@ -37,3 +37,15 @@ student2.display_info()
 course1 = Course("OOP", "PROG211")
 course1.display_info()
 student1.enroll_course(course1)
+
+students = [student1, student2]
+
+def add_student(student):
+    students.append(student)
+
+student3 = Student("James", 4245, 13, "C")
+add_student(student3)
+
+for student in students:
+    student.display_info()
+
