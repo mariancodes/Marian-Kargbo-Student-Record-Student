@@ -13,8 +13,13 @@ class Student:
         print("Age", self.age)
         print("Grade", self.grade)
 
+
     def enroll_course(self, course):
-        print(self.name, "is enrolled in", course.course_name)       
+        print(self.name, "is enrolled in", course.course_name)  
+
+    @classmethod
+    def school_name(cls):    
+     print("Limkokwing University")        
 
 class Course:
     def __init__(self, course_name, course_id):
@@ -48,4 +53,6 @@ add_student(student3)
 
 for student in students:
     student.display_info()
+    
+Student.school_name()
 
