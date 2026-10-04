@@ -13,6 +13,9 @@ class Student:
         print("Age", self.age)
         print("Grade", self.grade)
 
+    def enroll_course(self, course):
+        print(self.name, "is enrolled in", course.course_name)       
+
 class Course:
     def __init__(self, course_name, course_id):
         self.course_name = course_name
@@ -33,3 +36,4 @@ student2.display_info()
 
 course1 = Course("OOP", "PROG211")
 course1.display_info()
+student1.enroll_course(course1)
