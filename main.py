@@ -13,9 +13,23 @@ class Student:
         print("Age", self.age)
         print("Grade", self.grade)
 
+class Course:
+    def __init__(self, course_name, course_id):
+        self.course_name = course_name
+        self.course_id = course_id
+
+    def display_info(self):
+        print("Course Information")
+        print("Course Name", self.course_name)
+        print("Course ID", self.course_id)
+
+
 
 student1 = Student("Marian", 5052, 19, "A")    
 student1.display_info()    
 
 student2 = Student("Isha", 2025, 17, "B")
 student2.display_info()
+
+course1 = Course("OOP", "PROG211")
+course1.display_info()
