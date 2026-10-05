@@ -40,3 +40,14 @@ The program displays student information, course information, student enrollment
 
 Example output:
 
+Student Information 1
+Name: Marian
+ID 5052
+Age 19
+Grade A+
+
+Student Information 2
+Name: Isha
+ID 2025
+Age 17
+Grade B
