@@ -10,6 +10,15 @@ A simple python-based student record system developed using object-oriented prog
 - Class methods
 - Object interaction
 
+## Screenshots
+
+  <img width="960" height="504" alt="Screenshot 2026-10-05 131827" src="https://github.com/user-attachments/assets/495896a0-4dae-4e2a-8ed0-74a853a0bdbf" />
+
+  <img width="960" height="504" alt="Screenshot 2026-10-05 131658" src="https://github.com/user-attachments/assets/c7557d3d-3fdc-4dce-8ff3-a407d1215c99" />
+
+
+
+
 ## Data Structure
 
 The project uses a python list to store multiple Student objects.
